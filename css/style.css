@@ -440,7 +440,7 @@
    .contact .info .social .icons {
       display: flex;
       position: absolute;
-      right: 26%;
+      right: 10%;
    }
    .contact .info .social i {
       color: var(--secondary-color);
@@ -451,8 +451,8 @@
       font-size: 32px;
       font-weight: 800;
       position: absolute;
-      left: 28%;
-      top: -28px;
+      left: 70px;
+      top: -30px;
    }
    /* .contact .social .icons i {
       display: grid;
@@ -475,16 +475,18 @@
          right: 15px;
       }
       .contact .social p {
-         font-size: 25px;
+         font-size: 20px;
          font-weight: 600;
          position: relative;
+         margin-top: 36px;
          left: -5%;
       }
       .contact .info .social .icons {
          display: flex;
          position: absolute;
-         right: -4%;
-         top: 25%;
+         right: -20%;
+         top: 10%;
+     }
       }
 
      }
@@ -515,7 +517,7 @@
       .contact .info .social .icons {
          display: flex;
          position: absolute;
-         right: 10%;
+         right: 15%;
          top: -5%;
       }
 
@@ -533,10 +535,10 @@
       .contact .info .social .icons {
          display: flex;
          position: absolute;
-         right: 17%;
-         top: 0%;
-     }
-      }
+         right: 21%;
+         top: -2%;
+         }
+       }
       @media (min-width:1400px) {
 
          .contact .social p {
@@ -551,7 +553,7 @@
          .contact .info .social .icons {
             display: flex;
             position: absolute;
-            right: 22%;
+            right: 24%;
             top: -2%;
          }
       }
