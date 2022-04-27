@@ -20,6 +20,7 @@
  body{
     font-family: 'Shizuru', cursive;
     font-family: 'Work Sans', sans-serif;
+    /* background-color: black; */
  }
  
  .container{
@@ -80,29 +81,31 @@
 
 /* End Components */
   /* Start Header  */
-  .header{
+  .landing{
      padding: 20px;
      background-color: var(--secondary-color);
 
   }
-  .header .container{
+  .landing .container{
      display: flex;
      justify-content: space-between ;
      align-items: center;
   }
-  .header .logo{
-     width: 100px;
+  .landing .logo{
+     width: 180px;
+     display: flex;
+     transform: translateX(-120px);
   }
-  .header .links{
+  .landing .links{
      position: relative;
   }
-  .header .links:hover .icon span:nth-child(2){
+  .landing .links:hover .icon span:nth-child(2){
    width: 100%;
 }
-.header .links:hover ul{
+.landing .links:hover ul{
    display: block;
 }
-  .header .links .icon {
+  .landing .links .icon {
      width: 30px;
      height: 30px;
      display: flex;
@@ -110,26 +113,26 @@
      justify-content: flex-end;
      
   }
-  .header .links .icon span{
+  .landing .links .icon span{
       background-color:#333;
       margin-bottom: 5px;
       height: 2px;
   }
-  .header .links .icon span:first-child{     
+  .landing .links .icon span:first-child{     
    width: 100%;
    
 
 
   }
-  .header .links .icon span:nth-child(2){     
+  .landing .links .icon span:nth-child(2){     
       width: 60%;
       transition: var(--main-duration) ;
 
   }
-  .header .links .icon span:last-child{     
+  .landing .links .icon span:last-child{     
    width: 100%;
   }
-  .header .links ul{
+  .landing .links ul{
      list-style: none;
      margin: 0;
      padding: 0;
@@ -142,7 +145,7 @@
      z-index: 1;
      text-align: left;
   }
-  .header .links ul:before{
+  .landing .links ul:before{
      content: '';
      border: 20px solid ;
      border-color: transparent transparent #ebeced transparent;
@@ -150,7 +153,7 @@
      top: -40px;
      right: 0;
   }
-  .header .links ul li a{
+  .landing .links ul li a{
      display: block;
      padding: 15px;
      margin: 5px;
@@ -160,11 +163,11 @@
      transition:var(--main-duration) ;
      text-transform: uppercase;
   }
-  .header .links ul li a:hover{
+  .landing .links ul li a:hover{
      padding-left: 40px;
      color:rgb(53, 34, 34);
   }
-  .header .links ul li:not(:last-child) a {
+  .landing .links ul li:not(:last-child) a {
      border-bottom: 2px #ddd solid;
      border-width: 100%;
   }
@@ -485,12 +488,10 @@
          display: flex;
          position: absolute;
          right: -20%;
-         top: 5%;
-
-     }
+         top: 10%;
+       }
       }
-
-     }
+      
      @media (min-width:767px) {
       .contact .social p {
          font-size: 30px;
