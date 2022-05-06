@@ -94,7 +94,6 @@
   .landing .logo{
      width: 180px;
      display: flex;
-     transform: translateX(-120px);
   }
   .landing .links{
      position: relative;
